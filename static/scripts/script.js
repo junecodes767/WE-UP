@@ -38,7 +38,15 @@ document.addEventListener("DOMContentLoaded", function() {
         var success_audio = document.getElementById("audio");
         success_audio.play().catch(console.error);
         button.style.visibility="hidden"
-        ballon_animation()
+        black_film = document.querySelector('.black-film')
+        black_film.style.visibility = "hidden"
+        pop_up = document.querySelectorAll('.b-text')
+        pop_up.forEach((text)=>{
+                text.style.visibility = "hidden"
+        }
+        )
+        
+        // ballon_animation()
     }
 });
 //  window.addEventListener("load", () => {

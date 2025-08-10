@@ -1,3 +1,7 @@
 body{
-    background-color: #FFCE1B;
+    background-color: #F8B620 !important; 
+}
+
+.popup h1{
+    color: white;
 }

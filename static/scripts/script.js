@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
         button.style.visibility="hidden"
         black_film = document.querySelector('.black-film')
         black_film.style.visibility = "hidden"
-        pop_up = document.querySelectorAll('.b-text')
+        pop_up = document.querySelectorAll('.text-white')
         pop_up.forEach((text)=>{
                 text.style.visibility = "hidden"
         }

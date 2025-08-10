@@ -23,20 +23,22 @@
     </nav>
     <h1 id="text" style="visibility: hidden; text-align: center; margin-top: 200px; z-index: 99999;">Congratulations
     </h1>
-    <div class="black-film"
-        style="position: fixed;z-index: 999;background-color: black; width: 200rem;height: 400rem; margin-top: -100rem;opacity: 0.95;">
-        
-
+    <!-- Black overlay covering entire viewport -->
+    <div class="black-film position-fixed top-0 start-0 w-100 vh-100"
+        style="background-color: black; opacity: 0.95; z-index: 999;">
     </div>
-    <div class="pop-up" style="position: fixed; z-index: 9999; ">
-            
-        <h1  class="b-text"  style="color: white; margin-left: 35rem;margin-top: -8rem;"> If you made it</h1>
-        <h1 class="b-text" style="color: white;margin-left: 39rem;">this far,</h1>
-        <h1 class="b-text" style="color: white;margin-left: 37rem;">Click here</h1>
-            <button type="button" class="btn btn-light"
-                style="padding: 10px;margin-left: 39rem ; height: 50px; width: 100px; font-weight: bold;margin-bottom: 4rem;"
-                id="button"> Click Here</button>
-        </div>
+
+    <!-- Centered content container -->
+    <div class="position-fixed top-50 start-50 translate-middle text-center"
+        style="z-index: 1000; max-width: 900px; width: 90%;">
+        <h1 class="text-white fs-4 fs-lg-1">If you made it</h1>
+        <h1 class="text-white fs-5 fs-lg-3">this far,</h1>
+        <h1 class="text-white fs-6 fs-lg-4 mb-3" >Click here</h1>
+        <button type="button" class="btn btn-light fw-bold" id="button"
+            style="width: 120px; height: 48px; font-size: 1rem;">
+            Click Here
+        </button>
+    </div>
     <audio id="audio">
         <source src="{{ url_for('static', filename ='audio/Success-Fanfare.mp3') }}" type="audio/mpeg">
     </audio>
